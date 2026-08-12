@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
+const PORT = process.env.PORT || 3000
 
 async function generateWithGeminiFallback(ai: GoogleGenAI, requestedModel: string, contents: any, config: any) {
   const candidateModels = [requestedModel, 'gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-2.5-pro'].filter(Boolean);
