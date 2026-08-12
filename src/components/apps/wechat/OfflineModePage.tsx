@@ -79,7 +79,8 @@ export const OfflineModePage: React.FC<OfflineModePageProps> = ({
     setIsGenerating(true);
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://one-ah64.onrender.com/api/chat', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

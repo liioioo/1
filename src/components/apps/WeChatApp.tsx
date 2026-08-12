@@ -487,7 +487,8 @@ export const WeChatApp: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         activeContact.customBuiltinPromptContent
       );
 
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://one-ah64.onrender.com/api/chat', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -724,7 +725,8 @@ export const WeChatApp: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     }
 
     try {
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://one-ah64.onrender.com/api/chat', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

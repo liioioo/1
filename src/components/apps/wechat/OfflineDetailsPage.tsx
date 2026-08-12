@@ -81,7 +81,8 @@ export const OfflineDetailsPage: React.FC<OfflineDetailsPageProps> = ({ message,
 让用户感觉是在和一个真实的人进行一次面对面的长时间交流。 对话应该像现实中的约会、朋友见面、熟人聊天一样，有自然的停顿、有细微情绪、有生活感，而不是一段提前写好的剧本。
 `;
 
-      const res = await fetch('/api/chat', {
+      const res = await fetch('https://one-ah64.onrender.com/api/chat', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -164,7 +164,7 @@ export const CheckPhoneApp: React.FC<{ onClose: () => void }> = ({ onClose }) =>
     } catch {}
 
     try {
-      const res = await fetch('/api/checkphone-generate', {
+      const res = await fetch('https://one-ah64.onrender.com/api/checkphone-generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

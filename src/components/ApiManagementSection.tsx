@@ -112,7 +112,7 @@ export const ApiManagementSection: React.FC = () => {
     setStatusMsg({ type: 'info', text: '正在跨域拉取 API 模型列表中...' });
 
     try {
-      const res = await fetch('/api/fetch-models', {
+      const res = await fetch('https://one-ah64.onrender.com/api/fetch-models', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
