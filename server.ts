@@ -608,7 +608,7 @@ ${systemPrompt || "一个性格鲜明、真实自然、有血有肉的现代角�
     });
     app.use(vite.middlewares);
   } else {
-    const distPath = path.join(process.cwd(), "dist");
+    const distPath = path.resolve(__dirname, "../dist");
     app.use(express.static(distPath));
     app.get("*", (req, res) => {
       res.sendFile(path.join(distPath, "index.html"));
