@@ -1,0 +1,235 @@
+import { AppConfig, Wallpaper, PhoneSpecs, ChatMessage, WorldBookItem, NovelBook, ForumPost } from './types';
+
+export const INITIAL_APPS: AppConfig[] = [
+  {
+    id: 'wechat',
+    name: '微信',
+    iconName: 'MessageSquare',
+    badge: 3,
+    gradient: 'from-emerald-500 to-green-600',
+    accentColor: '#10B981',
+    inDock: true,
+  },
+  {
+    id: 'worldbook',
+    name: '世界书',
+    iconName: 'Globe',
+    gradient: 'from-indigo-600 via-purple-600 to-violet-700',
+    accentColor: '#6366F1',
+    inDock: false,
+  },
+  {
+    id: 'settings',
+    name: '设置',
+    iconName: 'Settings',
+    gradient: 'from-slate-400 via-gray-500 to-slate-600',
+    accentColor: '#64748B',
+    inDock: false,
+  },
+  {
+    id: 'beautify',
+    name: '美化',
+    iconName: 'Palette',
+    gradient: 'from-fuchsia-500 via-pink-500 to-rose-500',
+    accentColor: '#EC4899',
+    inDock: false,
+  },
+  {
+    id: 'checkphone',
+    name: '查手机',
+    iconName: 'Smartphone',
+    gradient: 'from-cyan-500 via-blue-600 to-indigo-700',
+    accentColor: '#06B6D4',
+    inDock: true,
+  },
+  {
+    id: 'novel',
+    name: '同人文',
+    iconName: 'Book',
+    badge: 1,
+    gradient: 'from-zinc-800 via-zinc-900 to-black',
+    accentColor: '#18181b',
+    inDock: true,
+  },
+  {
+    id: 'forum',
+    name: '论坛',
+    iconName: 'Users',
+    badge: 5,
+    gradient: 'from-rose-500 via-red-500 to-orange-600',
+    accentColor: '#F43F5E',
+    inDock: true,
+  },
+];
+
+export const WALLPAPERS: Wallpaper[] = [
+  {
+    id: 'ins-white-pearl',
+    name: 'INS 极简珍珠白',
+    category: 'minimal',
+    cssBackground: 'linear-gradient(180deg, #fafafa 0%, #f1f3f5 100%)',
+    previewColor: '#f1f3f5',
+  },
+  {
+    id: 'ins-cream-latte',
+    name: 'INS 奶油燕麦奶',
+    category: 'minimal',
+    cssBackground: 'linear-gradient(135deg, #f7f3ee 0%, #e8e2dc 100%)',
+    previewColor: '#e8e2dc',
+  },
+  {
+    id: 'ins-sage-mist',
+    name: 'INS 鼠尾草冷雾',
+    category: 'minimal',
+    cssBackground: 'linear-gradient(135deg, #f0f4f2 0%, #dbf0e6 100%)',
+    previewColor: '#dbf0e6',
+  },
+  {
+    id: 'ins-dark-obsidian',
+    name: 'INS 暗黑纯曜石',
+    category: 'dark',
+    cssBackground: 'linear-gradient(135deg, #09090b 0%, #18181b 100%)',
+    previewColor: '#18181b',
+  },
+  {
+    id: 'ios18-light',
+    name: 'iOS 18 柔光彩虹',
+    category: 'ios',
+    cssBackground: 'linear-gradient(135deg, #e0e7ff 0%, #fbcfe8 35%, #fef3c7 70%, #dbeafe 100%)',
+    previewColor: '#fbcfe8',
+  },
+];
+
+export const DEFAULT_PHONE_SPECS: PhoneSpecs = {
+  model: 'iPhone 16 Pro Max',
+  systemVersion: 'iOS 18.2 (22C152)',
+  chip: 'Apple A18 Pro (3nm)',
+  ram: '8 GB LPDDR5X',
+  storageUsed: 128.4,
+  storageTotal: 512,
+  batteryLevel: 92,
+  batteryHealth: 99,
+  cpuUsage: 18,
+  screenRefreshRate: 120,
+  ipAddress: '192.168.1.108',
+  networkType: '5G',
+};
+
+export const INITIAL_WECHAT_CHATS: ChatMessage[] = [
+  {
+    id: '1',
+    sender: '文件传输助手',
+    avatar: '📁',
+    content: '[图片] 手机主屏幕配置与备忘录.pdf',
+    time: '18:32',
+  },
+  {
+    id: '2',
+    sender: '世界书创作群',
+    avatar: '📖',
+    content: '大魔法师艾琳: 刚刚更新了第三纪元神明设定集！',
+    time: '17:45',
+  },
+  {
+    id: '3',
+    sender: '书友会小说讨论',
+    avatar: '📚',
+    content: '清风徐来: 最新一章的高潮剧情太烧脑了！',
+    time: '15:20',
+  },
+  {
+    id: '4',
+    sender: '手机发烧友论坛',
+    avatar: '📱',
+    content: '极客小助手: 你的设备运行状态非常好，电池健康度 99%',
+    time: '昨天',
+  },
+];
+
+export const INITIAL_WORLD_BOOKS: WorldBookItem[] = [];
+
+export const INITIAL_NOVELS: NovelBook[] = [
+  {
+    id: 'nov-1',
+    title: '星穹之主：从悬浮城开始',
+    author: '夜观星象',
+    coverGradient: 'from-zinc-100 to-zinc-200',
+    chapterCount: 184,
+    currentChapter: 42,
+    progress: 23,
+    content: [
+      '第42章 悬浮之城的迷雾',
+      '风从云海深处吹来，带着冷冽的以太气息。林默站在三万米高空的浮空穹顶边缘，俯瞰着下方被层层迷雾包裹的云下大陆。',
+      '手中的光辉水晶发出微弱而律动的荧光，仿佛在回应着下方深渊中的某种古老呼唤。',
+      '“队长，前方的以太气流异常剧烈，导航罗盘已经失灵了！”身后的通讯器传来同伴急促的声音。',
+      '林默嘴角微微上扬，握紧了腰间的机械短刃：“失灵就对了，这说明我们终于到了传说中的‘第零号禁区’。”',
+    ],
+  },
+  {
+    id: 'nov-2',
+    title: '赛博世界的修仙指南',
+    author: '电晶法师',
+    coverGradient: 'from-zinc-200 to-zinc-300',
+    chapterCount: 260,
+    currentChapter: 110,
+    progress: 45,
+    content: [
+      '第110章 符文电路与金丹核心',
+      '霓虹闪烁的下城区雨夜中，陸云将一块高频计算芯片焊接到了自制的‘引雷符’电路板上。',
+      '“谁说修仙要吸纳天地灵气？纳米机械与高压电弧才是最纯粹的正统神雷！”',
+    ],
+  },
+  {
+    id: 'nov-3',
+    title: '世界书管理员日志',
+    author: '创世神之眼',
+    coverGradient: 'from-zinc-50 to-zinc-100',
+    chapterCount: 95,
+    currentChapter: 15,
+    progress: 16,
+    content: [
+      '第15章 修正失控的法则设定',
+      '今天检查了第4号平行世界的参数，发现魔法守恒定律被某位勇者无意间卡出了漏洞。',
+      '作为管理者，我决定降下一次小小的‘系统更新’。',
+    ],
+  },
+];
+
+export const INITIAL_FORUM_POSTS: ForumPost[] = [
+  {
+    id: 'fp-1',
+    author: '数码极客阿狂',
+    avatar: '👨‍💻',
+    time: '10分钟前',
+    title: '【测评】iPhone 16 Pro Max 体验：动态岛与全新芯片性能爆表！',
+    content: '拿到了新机，上手感受非常震撼。A18 Pro 芯片在跑大型游戏和AI计算时温度控制得非常好，屏幕120Hz ProMotion丝滑顺畅。大家有遇到什么实用小功能吗？',
+    likes: 128,
+    comments: 34,
+    tags: ['手机测评', 'iPhone', '硬件'],
+    isLiked: false,
+  },
+  {
+    id: 'fp-2',
+    author: '世界设定构架师',
+    avatar: '🌌',
+    time: '1小时前',
+    title: '【分享】如何写出一本逻辑严密的世界书（Worldbook）框架？',
+    content: '很多新手作者在做世界观设定时容易堆砌词条。我认为最关键的三要素是：本源法则、社会生产力水平、以及矛盾冲突源头。欢迎交流你的世界书！',
+    likes: 256,
+    comments: 89,
+    tags: ['世界书', '创作交流', '设定集'],
+    isLiked: true,
+  },
+  {
+    id: 'fp-3',
+    author: '桌面美化达人',
+    avatar: '🎨',
+    time: '3小时前',
+    title: '【美化灵感】晒晒我的 iOS 18 极简暗黑风小组件搭配！',
+    content: '通过更换毛玻璃透明小组件和高对比度霓虹壁纸，主屏幕瞬间逼格拉满！大家喜欢什么风格的主屏幕？',
+    likes: 95,
+    comments: 18,
+    tags: ['桌面美化', '壁纸', 'iOS18'],
+    isLiked: false,
+  },
+];

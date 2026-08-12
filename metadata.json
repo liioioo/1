@@ -1,0 +1,6 @@
+{
+  "name": "iPhone Home Screen",
+  "description": "A realistic interactive iPhone home screen simulation featuring WeChat, World Book, Settings, Beautify, Phone Info, Fan Fiction (同人文), and Forum apps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
